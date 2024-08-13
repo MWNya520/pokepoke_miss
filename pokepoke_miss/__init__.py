@@ -5,7 +5,7 @@ from nonebot.plugin import PluginMetadata
 import random
 
 # 戳一戳 Matcher
-poke = on_notice()
+poke = on_notice(priority=100,block=False)
 
 # 消息列表
 
