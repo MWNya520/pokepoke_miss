@@ -25,7 +25,7 @@ jobs:
 
     - name: Build and Publish to PyPI
       env:
-        USERNAME: ${{ secrets.PYPI_USERNAME }}
-        PASSWORD: ${{ secrets.PYPI_PASSWORD }}
+        PYPI_USERNAME: ${{ secrets.PYPI_USERNAME }}
+        PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
       run: |
-        poetry publish --build --username $USERNAME --password $PASSWORD --skip-existing
+        poetry publish --build --username __token__ --password $PYPI_PASSWORD --skip-existing
