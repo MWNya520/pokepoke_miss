@@ -7,7 +7,8 @@ from .pokepoke_miss import *
 __plugin_meta__ = PluginMetadata(
     name="pokepoke_miss",
     description="wmc的戳一戳回复插件，消息内容、概率都可以定制喔~",
-    usage="戳一戳回复，提供娱乐功能",
+    usage="戳一戳",
     type="application",
-    extra={},
+    homepage="https://github.com/shengwang52005/pokepoke_miss",
+    supported_adapters={"~onebot.v11"},
 )
