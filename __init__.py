@@ -7,12 +7,25 @@ import random
 poke = on_notice()
 
 # 消息列表
+
+# 预设方案①
+'''
 message_list = [
     ("MISS",0.2),
     ("GOOD",0.2),
     ("GREAT",0.5),
     ("PERFECT",0.4),
     ("CRITICAL PERFECT",0.2)
+]
+'''
+
+# 预设方案②
+message_list = [
+    ("嗝~绝赞都被我吃完惹！MISS！",0.2),
+    ("绝赞都快要吃完了，你怎么才来拍我……只能给你 GOOD 惹",0.2),
+    ("才吃一半，爆个粉，给你个 GREAT 吧~",0.5),
+    ("还没有吃掉绝赞，你抓住了Break，就给你 PERFECT 吧！",0.4),
+    ("还没看见绝赞，就被你抓走了……给你 CRITICAL PERFECT 的评价~！",0.2)
 ]
 
 @poke.handle()
