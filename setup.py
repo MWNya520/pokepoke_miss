@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="pokepoke_miss",
-    version="0.1.3",
+    version="0.1.4",
     author="Miaowing",
     author_email="shengwang52005@163.com",
     description="wmc的戳一戳回复插件，消息内容、概率都可以定制喔~",
