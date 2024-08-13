@@ -23,4 +23,4 @@ async def handle_poke(bot: Bot, event: PokeNotifyEvent):
         messages, weights = zip(*message_list)
         # 根据概率选一个消息回复
         reply = random.choices(messages, weights=weights, k=1)[0]
-        await poke.send(event, reply)
+        await poke.send(reply)
