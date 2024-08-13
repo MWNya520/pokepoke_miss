@@ -1,7 +1,17 @@
 from nonebot import on_notice
 from nonebot.adapters.onebot.v11 import PokeNotifyEvent, Bot, Event
+from nonebot.plugin import PluginMetadata
 
 import random
+
+# 插件元数据
+__plugin_meta__ = PluginMetadata(
+    name="pokepoke_miss",
+    description="wmc的戳一戳回复插件，消息内容、概率都可以定制喔~",
+    usage="戳一戳回复，提供娱乐功能",
+    type="application",
+    extra={},
+)
 
 # 戳一戳 Matcher
 poke = on_notice()
