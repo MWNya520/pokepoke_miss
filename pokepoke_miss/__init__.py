@@ -3,9 +3,9 @@ import nonebot
 from nonebot.plugin import PluginMetadata
 from pathlib import Path
 
-import __main__
+from . import __main__
 
-# 插件元数据
+# 插件信息
 __plugin_meta__ = PluginMetadata(
     name="pokepoke_miss",
     description="wmc的戳一戳回复插件，消息内容、概率都可以定制喔~",

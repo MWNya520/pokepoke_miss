@@ -4,8 +4,10 @@ from nonebot.plugin import PluginMetadata
 
 import random
 
+print("pokepoke_miss is running!")
+
 # 戳一戳 Matcher
-poke = on_notice(priority=100,block=False)
+poke = on_notice(block=True)
 
 # 消息列表
 
@@ -28,6 +30,15 @@ message_list = [
     ("还没有吃掉绝赞，你抓住了Break，就给你 PERFECT 吧！",0.4),
     ("还没看见绝赞，就被你抓走了……给你 CRITICAL PERFECT 的评价~！",0.2)
 ]
+
+# 预设方案③
+# 火热更新中！
+'''
+message_list = [
+    ("每次都差那么一点点，心态已经彻底崩溃了，手指也跟不上！",0.2),
+    ("fast和slow简直是我的噩梦，心态已经炸裂，每次都差那么一点！",0.2)
+]
+'''
 
 @poke.handle()
 async def handle_poke(bot: Bot, event: PokeNotifyEvent):
