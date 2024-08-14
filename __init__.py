@@ -4,7 +4,7 @@ from nonebot.plugin import PluginMetadata
 from pathlib import Path
 
 sub_plugins = nonebot.load_plugins(
-    str(Path(__file__).parent.joinpath("plugins").resolve())
+    str(Path(__file__).parent.joinpath("pokepoke_miss").resolve())
 )
 
 # 插件元数据
