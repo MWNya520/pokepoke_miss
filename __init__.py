@@ -3,7 +3,7 @@ import nonebot
 from nonebot.plugin import PluginMetadata
 from pathlib import Path
 
-from .__main__ import *
+from __main__ import *
 
 # 插件元数据
 __plugin_meta__ = PluginMetadata(
