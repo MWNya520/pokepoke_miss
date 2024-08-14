@@ -28,4 +28,4 @@ jobs:
         PYPI_USERNAME: ${{ secrets.PYPI_USERNAME }}
         PYPI_PASSWORD: ${{ secrets.PYPI_PASSWORD }}
       run: |
-        poetry publish --build --username __token__ --password $PYPI_PASSWORD --skip-existing
+        poetry publish --build --username __token__ --password $PYPI_API_TOKEN --skip-existing
