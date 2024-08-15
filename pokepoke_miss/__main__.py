@@ -4,8 +4,11 @@ import random
 
 print("pokepoke_miss is running!")
 
-# 指定事件类型
-poke = on_notice(PokeNotifyEvent)
+# 戳一戳
+def _poke_check(event:PokeNotifyEvent):
+    return event.target_id==event.self_id
+    
+poke = on_notice(rule=_poke_check,priority=100)
 
 # 预设方案①
 preset_1 = [
