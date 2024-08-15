@@ -1,5 +1,5 @@
 from nonebot import on_notice
-from nonebot.adapters.onebot.v11 import PokeNotifyEvent, Bot
+from nonebot.adapters.onebot.v11 import PokeNotifyEvent, Bot, Event
 import random
 
 print("pokepoke_miss is running!")
@@ -60,5 +60,6 @@ async def handle_poke(bot: Bot, event: PokeNotifyEvent):
         messages, weights = zip(*message_list)
         # 根据概率选一个消息回复
         reply = random.choices(messages, weights=weights, k=1)[0]
-        await bot.send(event, reply)
+        await poke.send(reply)
+
 
