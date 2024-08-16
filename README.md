@@ -27,7 +27,7 @@ nb plugin install pokepoke_miss
 
 ### 手动安装
 
-1. 将 `pokepoke_miss.py` 文件放入你的 Nonebot 插件目录中
+1. 将 `pokepoke_miss` 文件夹放入你的 Nonebot 插件目录中
 
 2. 在 `bot.py`中写入以下代码：
 
