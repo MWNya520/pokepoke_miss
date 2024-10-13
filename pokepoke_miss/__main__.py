@@ -7,7 +7,7 @@ help = on_command("pokehelp")
 
 @help.handle()
 async def handle_help():
-    help.send(f"pokepoke_miss\n戳一戳回复\n使用方法：戳一下bot就可以了喔~\n========\n鸣谢名单：方长 给予功能实现方向")
+    await help.send(f"pokepoke_miss\n戳一戳回复\n使用方法：戳一下bot就可以了喔~\n========\n鸣谢名单：方长 给予功能实现方向")
 
 # 戳一戳
 def _poke_check(event:PokeNotifyEvent):
